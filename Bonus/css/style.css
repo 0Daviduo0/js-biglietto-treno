@@ -6,16 +6,17 @@
 }
 
 :root {
-	--semi_trasparent: rgba(255, 255, 255, 0.476);
-    --nav_borders: rgba(255, 255, 255, 0.539);
+	--semi_trasparent: rgba(255, 255, 255, 0.196);
+    --nav_borders: rgba(255, 255, 255, 0.424);
     --nav_text_color: #FFF;
+    --ticket_container_text: #fff;
 }
 
 body{
     height: 100vh;
     width: 100%;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(0,154,93,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(129,110,163,1) 100%);
 }
 
 main{
@@ -66,6 +67,12 @@ main{
                     font-weight: 600;
                 }
 
+                    .eta{
+                        padding-left: 90px;
+                        color: rgba(255, 255, 255, 0.596);
+                        font-weight: 200;
+                    }
+
             .collapsed_nav_icons{
                 display: flex;
                 position: absolute;
@@ -114,8 +121,97 @@ main{
     
 
         .ticket_container{
+            display: flex;
             width: 80%;
-            height: 800px;
+            height: 600px;
             background-color: var(--semi_trasparent);
             border-radius: 15px;
+            position: relative;
+            color: var(--ticket_container_text);
         }
+
+                .illustration{
+                    position: absolute;
+                    top: -280px;
+                    right: -170px;
+                }
+
+
+            .ticket_sx{
+                display: flex;
+                width: 60%;
+                height: 100%;
+            }
+                .ticket_shop{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    position: relative;
+                }
+
+                    .ticket_buy_fase{
+                        font-size: 50px;
+                        font-weight: 900;
+                        position: absolute;
+                        top: -100px;
+                        padding-left: 20px;
+                    }
+
+                    
+                        .tratta_icona{
+                            display: flex;
+                            margin: 30px 20px;
+                        }
+
+                            #position_icon{
+                                margin-right: 10px;
+                            }
+
+                            .tratta{
+                                font-size: 28px;
+                                font-weight: 700;
+                            }
+
+                            .maps{
+                                height: 80%;
+                                margin: 0px 20px;
+                                border-radius: 15px;
+                                overflow: hidden;
+                            }
+
+                                .googlemaps{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+            .ticket_dx{
+                display: flex;
+                flex-direction: column;
+                margin-top: 25%;
+                margin-left: 30px;
+            }
+
+                .checkout{
+                    font-size: 50px;
+                    font-weight: 900;
+                    margin-bottom: 15px;
+                }
+
+                    .cart_item{
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 35px;
+                    }
+
+                    .prezzo{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                        #prezzo_finale{
+                            font-size: 50px;
+                            font-weight: 800;
+                        }
+

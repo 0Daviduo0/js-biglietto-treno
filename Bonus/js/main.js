@@ -60,6 +60,11 @@ console.log("età",eta);
 // Stampa nome
 document.getElementById("name").innerHTML = `${nome}`;
 
+// Stampa km
+document.getElementById("km").innerHTML = `${km} km`;
+
+// Stampa età
+document.getElementById("eta").innerHTML = `${eta}`;
 
 // Condizioni
 if(eta <= 17){
