@@ -3,19 +3,30 @@ let km = parseInt(prompt("Quanti Km hai intenzione di percorrere?"));
 
 console.log("distanza",km);
 
+    // Range distanza
+    while (
+        isNaN(km) || //km is a number
+            km <0 || km >9999
+        )
+        {
+            alert ("🙄I don't know Rick...");
+            km = parseInt(prompt("Quanti Km hai intenzione di percorrere?"));
+        };
+
 // Richiesta età
 let eta = parseInt(prompt("Quanti anni hai?"));
 
 console.log("età",eta);
 
-while (
-    isNaN(eta) || //eta is a number
-        eta <0 || eta >110
-    )
-    {
-        alert ("I don't know Rick...");
-        eta = parseInt(prompt("Quanti anni hai?"));
-    };
+    // Range età
+    while (
+        isNaN(eta) || //eta is a number
+            eta <0 || eta >110
+        )
+        {
+            alert ("🙄I don't know Rick...");
+            eta = parseInt(prompt("Quanti anni hai?"));
+        };
 
 // Calcolo del prezzo
     
