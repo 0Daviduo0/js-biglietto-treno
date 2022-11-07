@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+	--semi_trasparent: rgba(255, 255, 255, 0.476);
+    --nav_borders: rgba(255, 255, 255, 0.539);
+    --nav_text_color: #FFF;
 }
 
 body{
@@ -18,7 +25,7 @@ main{
 }
 
     .nav_side{
-        width: 15%;
+        width: 20%;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -26,14 +33,79 @@ main{
     }
 
         .nav_container{
-            width: 200px;
-            height: 300px;
-            background-color: rgba(255, 255, 255, 0.591);
+            width: 300px;
+            height: 400px;
+            background-color: var(--semi_trasparent);
             border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            color: var(--nav_text_color);
         }
 
+            .nav_item{
+                padding: 10px 5px;
+                display: flex;
+                align-items: center;
+                font-size: 30px;
+                border-bottom: 1px solid var(--nav_borders);
+            }
+
+                .icon{
+                    font-size: 25px;
+                }
+
+                #column_icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                }
+
+                .icon_label{
+                    font-weight: 600;
+                }
+
+            .collapsed_nav_icons{
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+
+                .collapsed_nav_item{
+                    border-top: 1px solid var(--nav_borders);
+                    border-bottom: none;
+                }
+
+                #faq{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    right: 1px solid var(--nav_borders);
+                    
+                }
+
+                    #faq_icon{
+                        font-size: 40px;
+                    }
+
+                #lingua{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 40px;
+                    border-left: 1px solid var(--nav_borders);
+                }
+
+                    #lingua_icon{
+                        font-size: 40px;
+                    }
+
     .ticket_side{
-        width: 85%;
+        width: 80%;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -44,6 +116,6 @@ main{
         .ticket_container{
             width: 80%;
             height: 800px;
-            background-color: rgba(255, 255, 255, 0.591);
+            background-color: var(--semi_trasparent);
             border-radius: 15px;
         }

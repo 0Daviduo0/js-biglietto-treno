@@ -1,3 +1,9 @@
+// Richiesta nome
+let nome = prompt("Come ti chiami?");
+
+console.log("nome",nome);
+
+
 // Richiesta distanza
 let km = parseInt(prompt("Quanti Km hai intenzione di percorrere?"));
 
@@ -50,6 +56,9 @@ console.log("età",eta);
         let pezzo_km_arrotondato = (prezzo_km).toFixed(2);
         let discount_minors_arrotondato = (discount_minors).toFixed(2);
         let discount_over_arrotondato = (discount_over).toFixed(2);
+
+// Stampa nome
+document.getElementById("name").innerHTML = `${nome}`;
 
 
 // Condizioni
